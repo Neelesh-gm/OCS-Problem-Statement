@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <table>
+        <tr>
+            <th>userid</th>
+            <th>password_hash</th>
+            <th>role</th>
+        </tr>
+        {% for each in current %}
+            <tr>
+                <th>{{ each.userid }}</th>
+                <th>{{ each.password_hash }}</th>
+                <th>{{ each.role }}</th>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
