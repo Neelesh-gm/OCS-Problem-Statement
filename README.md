@@ -43,7 +43,7 @@ The app will be available at http://127.0.0.1:5000/ (or 0.0.0.0:5000 if run from
 Configuration
 Recommended change to app_main.py to avoid hard-coded credentials and allow local fallback (example):
 
-# app_main.py (recommended change)
+# app_main.py
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
